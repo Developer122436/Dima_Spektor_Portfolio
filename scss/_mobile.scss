@@ -92,8 +92,25 @@
     grid-template-columns: 1fr;
   }
 
-  .boxes {
-    div {
+  #main-contact {
+    padding: 2rem;
+
+    .lg-heading {
+      margin-top: 1rem;
+      font-size: 5rem;
+    }
+
+    .boxes {
+      div {
+        font-size: 1rem;
+        padding: 0.5rem 0.5rem;
+      }
+    }
+  }
+
+  form {
+    input,
+    textarea {
       font-size: 1rem;
       padding: 0.5rem 0.5rem;
     }

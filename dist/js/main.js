@@ -8,8 +8,10 @@ const navItems = document.querySelectorAll(".nav-item");
 // Set Initial State Of Menu
 let showMenu = false;
 
+// Event listener - works when pressing the menu-btn element
 menuBtn.addEventListener("click", toggleMenu);
 
+// Show or close menu every click event of menu-btn
 function toggleMenu() {
   if (!showMenu) {
     menuBtn.classList.add("close");

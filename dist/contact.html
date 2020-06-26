@@ -11,7 +11,6 @@
       integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
       crossorigin="anonymous"
     />
-
     <link rel="stylesheet" href="css/main.css" />
     <title>Dima Spektor | Contact Me</title>
   </head>
@@ -58,7 +57,7 @@
       </nav>
     </header>
 
-    <main id="contact">
+    <div id="main-contact">
       <h1 class="lg-heading">
         Contact Me
       </h1>
@@ -76,17 +75,20 @@
             <span class="text-secondary">Phone: </span> +972-507999325
           </a>
         </div>
-        <div>
-          <a
-            href="https://maps.google.com/?q=Karmiel, Israel&t=m""
-          >
-            <i class="fas fa-address-card fa-1x"></i>
-            <span class="text-secondary">Address: </span> Karmiel, Israel (I
-            have a willingness to move to another city).
-          </a>
-        </div>
       </div>
-    </main>
+   </div>
+
+  <form id="form" action="contact.php" method="post">
+      <div class="row">
+        <h1>Message is sended!</h1>
+        <input type="text" name="name" id="name" placeholder="Name"></input>
+        <input type="text" name="email" id="email" placeholder="Email"></input>
+        <input type="text" name="subject" id="subject" placeholder="Subject"></input>
+        <textarea type="text" name="message" id="text-area" placeholder="Message"></textarea>
+        <span>*Please complete all fields correctly</span>
+        <button type="submit" class="btn" id="btn-form-contact" >Send Message</button>
+      </div>
+  </form>
 
     <footer id="main-footer">
       <div class="icons">
@@ -101,5 +103,6 @@
     </footer>
 
     <script src="js/main.js"></script>
+    <script src="js/validateForm.js"></script>
   </body>
 </html>
