@@ -1,3 +1,4 @@
+// Select DOM Items
 const form = document.getElementById("form");
 const name = document.getElementById("name");
 const email = document.getElementById("email");
@@ -7,7 +8,6 @@ const textArea = document.getElementById("text-area");
 // Event listener - works when pressing the submit form button
 form.addEventListener("submit", (e) => {
   e.preventDefault();
-  
   if (checkRequired([name, email, subject, textArea]) && checkEmail(email)) {
     submitForm();
   }
@@ -42,7 +42,6 @@ function checkRequired(inputArr) {
 // Check email is valid
 function checkEmail(input) {
   const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-  
   if (re.test(input.value.trim())) {
     input.className = "success";
     return true;
