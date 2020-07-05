@@ -20,7 +20,7 @@ function submitForm() {
   setTimeout(function () {
     h1.className = "";
     form.submit();
-  }, 3000);
+  }, 2000);
 }
 
 // Check required fields
