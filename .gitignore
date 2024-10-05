@@ -1,1 +1,10 @@
-.vscode
+/node_modules
+/dist
+/build
+*.css.map
+*.js.map
+*.log
+package-lock.json
+.env
+.DS_Store
+Thumbs.db

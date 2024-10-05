@@ -11,10 +11,12 @@
       integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
       crossorigin="anonymous"
     />
+
     <link rel="stylesheet" href="css/main.css" />
-    <title>Dima Spektor | Home</title>
+    <title>Dima Spektor | Contact Me</title>
   </head>
-  <body id="bg-img">
+
+  <body>
     <header>
       <div class="menu-btn">
         <div class="btn-line"></div>
@@ -56,31 +58,61 @@
       </nav>
     </header>
 
-    <main id="home">
+    <div id="main-contact">
       <h1 class="lg-heading">
-        Dima Spektor
+        Contact Me
       </h1>
-      <h2 class="sm-heading">
-        A web developer & software engineer experienced in client and server
-        side technologies. I aspire to become an innovative, creative and
-        analytical, simply a person that acquires new knowledge, had experience
-        and working with challenging tasks and challenging problems that I
-        successfully solved.
-      </h2>
-    </main>
+      <div class="boxes">
+        <div>
+          <a target="_blank" href="mailto:dimaspektor12@gmail.com">
+            <i class="far fa-envelope fa-1x"></i>
+            <span class="text-secondary">Email: </span>
+            dimaspektor12@gmail.com
+          </a>
+        </div>
+        <div>
+          <a href="tel:+972507999325">
+            <i class="fas fa-phone fa-1x"></i>
+            <span class="text-secondary">Phone: </span> +972-507999325
+          </a>
+        </div>
+      </div>
+   </div>
+
+  <form action="contact.php" id="form" method="post">
+      <div class="row">
+        <h1>Message is sended!</h1>
+        <input type="text" name="name" id="name" placeholder="Name"></input>
+        <input type="text" name="email" id="email" placeholder="Email"></input>
+        <input type="text" name="subject" id="subject" placeholder="Subject"></input>
+        <textarea type="text" name="message" id="text-area" placeholder="Message"></textarea>
+        <span>*Please complete all fields correctly</span>
+        <button type="submit" class="btn" id="btn-form-contact" >Send Message</button>
+      </div>
+  </form>
 
     <footer id="main-footer">
       <div class="icons">
+        <a href="tel:+972507999325">
+          <i class="fas fa-phone fa-2x"></i>
+        </a>
+        <a target="_blank" href="mailto:dimaspektor12@gmail.com">
+          <i class="far fa-envelope fa-2x"></i>
+        </a>
         <a href="https://www.linkedin.com/in/dima-spektor/">
           <i class="fab fa-linkedin fa-2x"></i>
+        </a>
+        <a href="https://drive.google.com/file/d/11NZRz0nR-YpnlK7SXF0Qf20pAjy2Ghif/view?usp=sharing">
+          <i class="fab fa-2x">CV</i>
         </a>
         <a href="https://github.com/Developer122436">
           <i class="fab fa-github fa-2x"></i>
         </a>
       </div>
-      Copyright &copy; 2020
+      &copy; 2021 - Created by dima spektor
     </footer>
 
     <script src="js/main.js"></script>
+    <script src="js/validateForm.js"></script>
   </body>
 </html>
