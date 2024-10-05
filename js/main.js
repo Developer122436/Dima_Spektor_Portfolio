@@ -32,4 +32,9 @@ function toggleMenu() {
     // Set Menu State
     showMenu = false;
   }
+
+
 }
+
+// Set automatic year
+document.getElementById("year").textContent = new Date().getFullYear();
