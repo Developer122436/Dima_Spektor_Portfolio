@@ -11,7 +11,7 @@
     width: 28px;
     height: 3px;
     margin: 0 0 5px 0;
-    background: set-text-color($primary-color);
+    background: white;
     @include easeOut;
   }
 
@@ -65,7 +65,7 @@
   &-nav {
     margin: 0;
     padding: 0;
-    background: darken($primary-color, 5);
+    background: darken($primary-color, 5%);
     list-style: none;
     transform: translate3d(0, -100%, 0);
     @include easeOut;
